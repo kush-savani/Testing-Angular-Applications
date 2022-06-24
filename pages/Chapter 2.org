@@ -1,0 +1,6 @@
+* Keyword and Definition
+** describe:
+*** Group together a series of tests.
+*** #+BEGIN_EXAMPLE
+describe(string describing the test suite, callback);
+#+END_EXAMPLE
