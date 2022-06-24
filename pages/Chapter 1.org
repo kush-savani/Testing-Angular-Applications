@@ -1,5 +1,4 @@
-#+title: Chapter 1: Introduction To Testing Angular Applications
-#+TITLE: Chapter 1:
-
-*
+* Two type of testing
+** [#B]Unit Testing : [[https://learning.oreilly.com/library/view/testing-angular-applications/9781617293641/c01.xhtml#:-:text=You%20write%20unit,the%20right%20environment.][ref]]
+** E2E Testing : [[https://learning.oreilly.com/library/view/testing-angular-applications/9781617293641/c01.xhtml#:-:text=You%20use%20E2E,buttons%20or%20text.][ref]]
 *
