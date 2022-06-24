@@ -1,4 +1,11 @@
 * Two type of testing
-** [#B]Unit Testing : [[https://learning.oreilly.com/library/view/testing-angular-applications/9781617293641/c01.xhtml#:-:text=You%20write%20unit,the%20right%20environment.][ref]]
-** E2E Testing : [[https://learning.oreilly.com/library/view/testing-angular-applications/9781617293641/c01.xhtml#:-:text=You%20use%20E2E,buttons%20or%20text.][ref]]
-*
+** Definition
+*** Unit Testing:
+**** You use E2E tests to test the functionality of an application by simulating the behavior of an end user. For example, you might have an E2E test check if a modal correctly appears after a form is submitted or a page renders certain elements on page load, such as buttons or text.
+*** E2E Testing:
+**** You use E2E tests to test the functionality of an application by simulating the behavior of an end user. For example, you might have an E2E test check if a modal correctly appears after a form is submitted or a page renders certain elements on page load, such as buttons or text.
+** Difference 
+:PROPERTIES:
+:collapsed: true
+:END:
+*** [[https://cdn.logseq.com/%2Fece3375d-bb13-43f9-a57c-1bccdb76fe2bdd806365-6071-4a99-94bd-909a6bb8da692022_06_24_Screenshot%202022-06-24%20at%2010.36.57%20PM.png?Expires=4809690581&Signature=bB2Zwd9XD0TauzpmQp9FEEHmho-N9RGN4ESA34KyxXKrKrPKcE23UJG4Xl1Znx5C6qgf338XKPAdyYXkyKhHLGiRc~GN3590sysQ8FbNJdtXMzbIbOfg0UszC-tS8I1ocT~JSTZOHt48tVTl4qelw57eIMFwndGgBmZbMnIWdLLZQV630p2HoVFf31tNdv8O99ivJP70p3~yzbEl6S-3UFQah9oCJqqJW9SOvJ-5f77VrKUGghXUf0STj2WhgDnJFMxF-KU~ZE~qfggnh8AMGKbl9h1PNzA4ss47e-2TG79f7GN8zJRSu1tuanptJA39caSOJydsTVRocfDOl-flYw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA]]
