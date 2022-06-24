@@ -1,9 +1,13 @@
 * Two type of testing
 ** Definition
 *** Unit Testing:
-**** You write unit tests to test the functionality of basic parts or units of code. Each unit test should only test one responsibility of the source code. You can test functions, methods, objects, types, values, and more with unit tests. The advantages of using unit tests are that they tend to be fast, reliable, and repeatable, if you write them correctly and run them in the right environment.
+#+BEGIN_QUOTE
+You write unit tests to test the functionality of basic parts or units of code. Each unit test should only test one responsibility of the source code. You can test functions, methods, objects, types, values, and more with unit tests. The advantages of using unit tests are that they tend to be fast, reliable, and repeatable, if you write them correctly and run them in the right environment.
+#+END_QUOTE
 *** E2E Testing:
-**** You use E2E tests to test the functionality of an application by simulating the behavior of an end user. For example, you might have an E2E test check if a modal correctly appears after a form is submitted or a page renders certain elements on page load, such as buttons or text.
+#+BEGIN_QUOTE
+You use E2E tests to test the functionality of an application by simulating the behavior of an end user. For example, you might have an E2E test check if a modal correctly appears after a form is submitted or a page renders certain elements on page load, such as buttons or text.
+#+END_QUOTE
 ** Difference 
 :PROPERTIES:
 :collapsed: true
