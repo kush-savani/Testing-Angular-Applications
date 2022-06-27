@@ -4,3 +4,78 @@
 *** #+BEGIN_EXAMPLE
 describe(string describing the test suite, callback);
 #+END_EXAMPLE
+** it:
+*** use it when you want to create a specific test
+*** #+BEGIN_EXAMPLE
+it(string describing the test, callback);
+#+END_EXAMPLE
+** expect:
+*** assertions function
+*** #+BEGIN_EXAMPLE
+expect(derive value).toBe(predicted value);
+#+END_EXAMPLE
+* Useful function which handy with *expext* and Notes.
+** toBe() vs toEqual():-
+*** For primitive types (e.g. numbers, booleans, strings, etc.), there is no difference between toBe and toEqual. Either one will work for 5, true, or "the cake is a lie".
+*** Enter toEqual, which checks "deep equality" (i.e. does a recursive search through the objects to determine whether the values for their keys are equivalent).
+** toBe(true) or toBeTruthy() or toBeTrue()
+*** toBe()
+- it will pass only if actually has the value 'true'. Truthy ([], {}, etc.) values won't make the test pass.
+#+BEGIN_EXAMPLE
+function toBe() {
+  return {
+    compare: function(actual, expected) {
+      return {
+        pass: actual === expected
+      };
+    }
+  };
+}
+#+END_EXAMPLE
+*** toBeTruthy()
+- The operation !! tests for truthiness by coercing the value passed to expect to a boolean.
+#+BEGIN_EXAMPLE
+function toBeTruthy() {
+  return {
+    compare: function(actual) {
+      return {
+        pass: !!actual
+      };
+    }
+  };
+}
+#+END_EXAMPLE
+*** toBeTrue()
+- The difference with expect().toBeTrue() and expect().toBe(true) is that expect().toBeTrue() tests whether it is dealing with a Boolean object. expect(new Boolean(true)).toBe(true) would fail whereas expect(new Boolean(true)).toBeTrue() would pass.
+#+BEGIN_EXAMPLE
+function toBeTrue(actual) {
+  return actual === true ||
+    is(actual, 'Boolean') &&
+    actual.valueOf();
+}
+#+END_EXAMPLE
+*** toBeDefined()
+- the actual value to be defined. (Not undefined).
+*** toBeInstanceOf()
+- use when you want to expect the actual to be an instance of the expected class
+
+#+BEGIN_EXAMPLE
+expect('foo').toBeInstanceOf(String);
+expect(3).toBeInstanceOf(Number);
+expect(new Error()).toBeInstanceOf(Error);
+#+END_EXAMPLE
+*** toHaveBeenCalled()
+- expect the actual (a Spy) to have been called.
+*** toHaveClass()
+- expect the actual value to be a DOM element that has the expected class
+#+BEGIN_EXAMPLE
+var el = document.createElement('div');
+el.className = 'foo bar baz';
+expect(el).toHaveClass('bar');
+#+END_EXAMPLE
+*** withContext()
+- Add some context for an expect. 
+
+#+BEGIN_EXAMPLE
+expect(true).withContext("your description").toBe(false);
+#+END_EXAMPLE
